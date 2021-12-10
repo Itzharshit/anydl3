@@ -24,11 +24,12 @@ bot_start_time = time.time()
 @Client.on_message(filters.command(["start"]), group=-2)
 async def start(client, message):
     bot_uptime = time.strftime("%Hh %Mm %Ss", time.gmtime(time.time() - bot_start_time)) 
-    joinButton = InlineKeyboardMarkup([
-        [InlineKeyboardButton("JOIN", url="https://t.me/TGBotsCollection")],
-        [InlineKeyboardButton(
-            "Try", url="https://t.me/TGBotsCollectionbot")]
-    ])
+    joinButton=InlineKeyboardMarkup([
+                    [InlineKeyboardButton("Support Group", url="https://t.me/+7ScFy39Vckk5MWQ1"),
+                     InlineKeyboardButton("Updates Channel", url="https://t.me/pyrogrammers")],
+                    [InlineKeyboardButton("YouTube Channel", url="https://youtube.com/channel/UC2anvk7MNeNzJ6B4c0SZepw")]
+                ])
+            )
     welcomed = f"Hii <b>{message.from_user.first_name}</b>\nThis is All In One Bot that can do a lot of stuffs."
     await message.reply_text(welcomed, reply_markup=joinButton)
     raise StopPropagation
