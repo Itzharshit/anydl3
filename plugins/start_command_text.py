@@ -29,7 +29,6 @@ async def start(client, message):
                      InlineKeyboardButton("Updates Channel", url="https://t.me/pyrogrammers")],
                     [InlineKeyboardButton("YouTube Channel", url="https://youtube.com/channel/UC2anvk7MNeNzJ6B4c0SZepw")]
                 ])
-            )
     welcomed = f"Hii <b>{message.from_user.first_name}</b>\nThis is All In One Bot that can do a lot of stuffs."
     await message.reply_text(welcomed, reply_markup=joinButton)
     raise StopPropagation
