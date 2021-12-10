@@ -60,9 +60,9 @@ async def get_me_info(bot, update):
 @pyrogram.Client.on_message(pyrogram.filters.command(["starting"]))
 async def start(bot, update):
     # logger.info(update)
-    await update.reply(f"<b>Hii {update.chat.first_name}!</b>\nThis is a Telegram Multipurpose Bot Which can do many functions. /help for more details...  ",reply_markup=InlineKeyboardMarkup(
+    await update.reply(f"<b>Hii {update.chat.first_name}!</b>\nThis is a all in one Bot Which can do many functions. /help for more details...  ",reply_markup=InlineKeyboardMarkup(
             [
-                    InlineKeyboardButton('JOIN', url='https://t.me/TGBotsCollection')
+                    InlineKeyboardButton('JOIN', url='https://t.me/pyrogrammers')
                 ]
         )
     )
