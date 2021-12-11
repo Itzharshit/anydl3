@@ -34,7 +34,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @pyrogram.Client.on_message(pyrogram.filters.command(["getlink2"]))
 async def get_link(bot, update):
     
-        return
     logger.info(update.from_user)
     if update.reply_to_message is not None:
         reply_message = update.reply_to_message
