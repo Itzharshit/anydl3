@@ -4,6 +4,7 @@ hachoir
 numpy
 Pillow
 Pyrogram
+mega.py
 moviepy
 requests
 psutil
